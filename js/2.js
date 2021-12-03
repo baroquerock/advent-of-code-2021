@@ -5,7 +5,7 @@ const input = fs
 	.readFileSync(path.resolve(__dirname, '../inputs/input2.txt'), 'utf8')
 	.toString()
 	.trim()
-	.split('\n')
+	.split('\n');
 
 const FORWARD = 'forward'
 const DEPTH = 'depth'
