@@ -6,7 +6,7 @@ const input = fs
 	.toString()
 	.trim()
 	.split('\n')
-	.map((num) => parseInt(num, 10));
+	.map((num) => parseInt(num, 10))
 
 const count = (li, window) => {
 
@@ -20,7 +20,7 @@ const count = (li, window) => {
 	for (let i = window; i < li.length; i += 1) {
 		const curr = prev + li[i] - li[i - window]
 		if (prev < curr) {
-			result += 1;
+			result += 1
 		}
 		prev = curr
 	}
@@ -29,8 +29,8 @@ const count = (li, window) => {
 }
 
 
-const res1 = count(input, 1);
-const res2 = count(input, 3);
+const res1 = count(input, 1)
+const res2 = count(input, 3)
 
 console.log(`Result 1: ${res1}`)
 console.log(`Result 2: ${res2}`)
